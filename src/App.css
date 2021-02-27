@@ -1,0 +1,80 @@
+
+body {
+  position: relative;
+  min-height: 100%;
+ }
+
+ /* header styles */
+.header {
+  position: fixed;
+  z-index:2;
+  display: block;
+  background-color: black;
+  padding: 1rem;
+  width: 100%;
+}
+.header span {
+  color: whitesmoke;
+  padding-left: 0.5rem;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* left side nav */
+.sideBar{
+  position: fixed!important;
+  top:55px;
+  height:100%;
+  overflow: auto;
+  width:250px;
+  display:block!important;
+}
+
+/* middle emails list */
+.container{
+  position: fixed!important;
+  margin-left:270px;
+  top:55px;
+  width:400px;
+  height:100%;
+  overflow: auto;
+}
+.mailsList{
+  padding-top:inherit;
+}
+.mailsTab{
+  /* position: fixed;
+  z-index:2;
+  width:400px; */
+}
+/* 
+.flex {
+  display: flex;
+  min-width: 0;
+} */
+.content{
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+/* email preview  */
+.contentBar{
+  position: relative;
+  margin-left:700px;
+  top:55px;
+  height:100%;
+  overflow: auto;
+  width: -webkit-fill-available;
+}
+.mailContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin:auto
+}
+.mailContent a{
+  color:blue;
+}
